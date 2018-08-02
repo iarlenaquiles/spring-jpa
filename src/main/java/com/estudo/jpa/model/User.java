@@ -22,6 +22,18 @@ public class User {
 	@ManyToMany
 	private Set<Role> roles;
 
+	public User() {
+
+	}
+
+	public User(Long id, String nome, String email, Set<Role> roles) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.email = email;
+		this.roles = roles;
+	}
+
 	public Long getId() {
 		return id;
 	}
